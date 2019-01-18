@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="es" dir="ltr" prefix="og: http://ogp.me/ns#">
 
 <head>
   <meta charset="utf-8" />
@@ -24,6 +24,9 @@
   } -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta name="description" content="Las mejores GUITARRAS INVISIBLES. ¡Sé la estrella de rock que siempre quisiste ser!">
+  <meta property="og:site_name" content="Invie" />
+  <meta property="og:image" content="/images/invie.png" />
+  <meta property="og:description" content="Las mejores GUITARRAS INVISIBLES. ¡Sé la estrella de rock que siempre quisiste ser!" />
   <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
   <style>
@@ -34,10 +37,10 @@
 <body>
   <section id="portada" class="portada background">
     <header id="header" class="header contenedor">
-      <figure class="logotipo">
+      <figure class="logotipo" itemscope itemtype="https://schema.org/Brand">
         <!-- FIXME: La imagen invie3x esta mal exportada para esta densidad, exportarla bien y cambiarla en el srcset o hay algun error en el codigo-->
         <img src="images/invie.png" srcset="images/invie2x.png 2x, images/invie2x.png 3x" alt="Invie Logotipo" width="186"
-          height="60" />
+          height="60" itemprop="logo" />
       </figure>
       <span class="burguer-button icon-menu" id="burguer-button"></span>
       <nav class="menu" id="menu">
@@ -69,27 +72,28 @@
       </div>
     </div>
     <!-- <video src="video/320x240.ogg"></video> -->
-    <article class="guitarra">
+    <article class="guitarra" itemscope itemtype="https://schema.org/MusicStore">
       <!-- FIXME: La imagen 2x esta mal exportada se ve mas grande o hay algo en el codigo:  <img class="derecha" data-src="images/invie-acustica.png|images/invie-acustica2x.png" alt="Guitarra Invie Acustica" width="350" /> -->
-      <img class="derecha" data-src="images/invie-acustica.png" alt="Guitarra Invie Acustica" width="350" />
+      <img class="derecha" src="images/invie-acustica.png" data-src="images/invie-acustica.png" alt="Guitarra Invie Acustica"
+        width="350" itemprop="image" />
       <div class="contenedor-guitarra-a">
-        <h3 class="title-b">Invie Acústica</h3>
+        <h3 class="title-b" itemprop="name">Invie Acústica</h3>
         <ol>
-          <li>Estilo Vintage</li>
-          <li>Madera pura</li>
-          <li>Incluye estuche invisible de alumnio</li>
+          <li itemprop="description">Estilo Vintage</li>
+          <li itemprop="description">Madera pura</li>
+          <li itemprop="description">Incluye estuche invisible de alumnio</li>
         </ol>
       </div>
     </article>
-    <article class="guitarra b">
-      <img class="izquierda" data-src="images/invie-classic.png|images/invie-classic2x.png" alt="Guitarra Invie Classic"
-        width="350" />
+    <article class="guitarra b" itemscope itemtype="https://schema.org/MusicStore">
+      <img class="izquierda" src="images/invie-classic.png" data-src="images/invie-classic.png|images/invie-classic2x.png"
+        alt="Guitarra Invie Classic" width="350" itemprop="image" />
       <div class="contenedor-guitarra-b">
-        <h3 class="title-b">Invie Classic</h3>
+        <h3 class="title-b" itemprop="name">Invie Classic</h3>
         <ol>
-          <li>Estilo Vintage</li>
-          <li>Liviana</li>
-          <li>Inicia tu camino como Rockstar</li>
+          <li itemprop="description">Estilo Vintage</li>
+          <li itemprop="description">Liviana</li>
+          <li itemprop="description">Inicia tu camino como Rockstar</li>
         </ol>
       </div>
     </article>
