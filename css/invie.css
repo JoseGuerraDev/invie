@@ -103,8 +103,7 @@ input:focus, textarea:focus {
   cursor: pointer;
   text-decoration: none;
   background: #ff7050;
-  background: -moz-linear-gradient(left, #ff7050 0%, #fe364d 100%);
-  background: -webkit-linear-gradient(left, #ff7050 0%, #fe364d 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff7050), to(#fe364d));
   background: linear-gradient(to right, #ff7050 0%, #fe364d 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7050', endColorstr='#fe364d', GradientType=1);
 }
@@ -223,10 +222,15 @@ input:focus, textarea:focus {
 }
 
 .contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 300px;
-  flex-wrap: wrap;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contacto img {
@@ -244,19 +248,30 @@ input:focus, textarea:focus {
 }
 
 .footer .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 400px;
   color: white;
 }
 
 .col1, .col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .col1 {
@@ -264,7 +279,9 @@ input:focus, textarea:focus {
 }
 
 .col2 {
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .col2 .button {
@@ -437,7 +454,8 @@ input:focus, textarea:focus {
   }
   textarea {
     width: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   /* input[type="radio"], input[type="checkbox"] { */
     /* zoom: 1.5; */
@@ -504,16 +522,23 @@ USAR LAS MISMAS PROPIEDADES QUE USAS EN EL MEDIAQUERIE */
     bottom: 0;
     right: 0;
     z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: rgba(255, 60, 88, .8);
+    -webkit-transition: .3s;
     transition: .3s;
   }
   .menu.active {
     left: 0;
   }
   .menu ul {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   .menu li {
     display: block;
@@ -553,7 +578,9 @@ USAR LAS MISMAS PROPIEDADES QUE USAS EN EL MEDIAQUERIE */
   
   /* footer */
   .col2 {
-    align-items: stretch;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
   /* footer */
 }
