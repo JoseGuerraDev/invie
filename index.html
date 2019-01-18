@@ -4,24 +4,6 @@
 <head>
   <meta charset="utf-8" />
   <title>Invie - tus mejores guitarras!!</title>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat|Allerta" rel="stylesheet"> -->
-  <!-- NOTE: Media queries: Consultas al estado de los medios, por ejemplo al estado de la pantalla del dispositivo en el cual se esta reproduciendo nuestro sitio.
-    Hay 2 formas de agregar o declarar media-queries:
-
-    1. Mediante una hoja de estilos externa que se llame cuando ocurra la condicion que nosotros le pongamos al mediaquerie, mediante el atributo media:
-
-    <link rel="stylesheet" media="(max-width: 800px)" href="css/media-querie.css">
-
-    2. O dentro del CSS, por ejemplo dentro de la hoja de estilos invie.css:
-
-    Se declaran con @media luego yo le puedo decir opcionalmente para que tipo de medio quiero ejecutar este media-querie Lista de medios: https://developer.mozilla.org/es/docs/Web/CSS/@media#Media_types por ejemplo un media print que seria el tipo de media-querie que se ejecutaria cuando yo quisiera imprimir la pantalla. Aunque para este ejemplo vamos a usar screen. Y a parte le tengo que decir con and la condicion que quiero que se cumpla para que se ejecute el mediaquerie que en este caso es max-width. Y entre llaves le digo lo que yo quiero que pase, por ejemplo:
-
-    @media screen and (max-width: 800px) {
-    body {
-    background: peru;
-    border: 15px solid skyblue;
-  }
-  } -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Las mejores GUITARRAS INVISIBLES. ¡Sé la estrella de rock que siempre quisiste ser!">
   <meta property="og:site_name" content="Invie" />
@@ -44,7 +26,7 @@
   <section id="portada" class="portada background">
     <header id="header" class="header contenedor">
       <figure class="logotipo" itemscope itemtype="https://schema.org/Brand">
-        <!-- FIXME: La imagen invie3x esta mal exportada para esta densidad, exportarla bien y cambiarla en el srcset o hay algun error en el codigo-->
+        
         <img src="images/invie.png" srcset="images/invie2x.png 2x, images/invie2x.png 3x" alt="Invie Logotipo" width="186"
           height="60" itemprop="logo" />
       </figure>
@@ -77,9 +59,9 @@
           frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
-    <!-- <video src="video/320x240.ogg"></video> -->
+    
     <article class="guitarra" itemscope itemtype="https://schema.org/MusicStore">
-      <!-- FIXME: La imagen 2x esta mal exportada se ve mas grande o hay algo en el codigo:  <img class="derecha" data-src="images/invie-acustica.png|images/invie-acustica2x.png" alt="Guitarra Invie Acustica" width="350" /> -->
+      
       <img class="derecha" src="images/invie-acustica.png" data-src="images/invie-acustica.png" alt="Guitarra Invie Acustica"
         width="350" itemprop="image" />
       <div class="contenedor-guitarra-a">
@@ -189,13 +171,6 @@
     var bLazy = new Blazy({
       selector: 'img'
     });
-
-    // $burguerButton.addEventListener('touchstart', toggleMenu);
-
-    // function toggleMenu() {
-    //   $menu.classList.toggle('active');
-    //   $burguerButton.classList.toggle('icon-close');
-    // }
 
     // gestos
 
