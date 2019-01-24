@@ -86,8 +86,6 @@ input:focus, textarea:focus {
   position: relative;
 }
 
-/* BUG: La imagen background sale manchada en la 1x y 3x, hay que cambiarlas */
-
 .background {
   background-color: #466173;
   background-image: url("../images/background.png");
@@ -495,6 +493,9 @@ USAR LAS MISMAS PROPIEDADES QUE USAS EN EL MEDIAQUERIE */
 
 @media screen and (max-width: 500px) {
   /* portada */
+  .background {
+    background-image: url("/images/background-rd.png");
+  }
   .portada .button {
     display: block;
   }
